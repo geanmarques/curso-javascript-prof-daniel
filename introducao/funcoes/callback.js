@@ -1,7 +1,8 @@
 const teste = function (cb) {
     console.log("função teste");
     console.log(cb);
-    cb(30);
+    typeof cb === "function" && cb(30)
+    
 }
 
 const fn = function (param) {
