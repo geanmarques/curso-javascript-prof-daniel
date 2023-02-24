@@ -1,7 +1,12 @@
-function teste (cb){
+const teste = function (cb) {
     console.log("função teste");
-    cb();
+    console.log(cb);
+    cb(30);
 }
-teste(function(){
-    console.log("função anonima de callback")
-})
+
+const fn = function (param) {
+    console.log("função anonima de callback");
+    console.log(param)
+}
+// fn(30)
+teste(fn)
